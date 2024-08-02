@@ -25,7 +25,6 @@ int main()
     Kien = {"Tran Manh Kien"};
     Tam = {"Nguyen Le Thi Tam Cam Tam"};
 
-    
 
     return 0;
 }
