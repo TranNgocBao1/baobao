@@ -5,7 +5,8 @@ int main()
 {
     string x, y, z, A;
     x = y = z = "hello";
-    A = x.substr(1, 1) + y.substr(2, 1) + z.substr(0, 1);
     cout << "A = " << A << endl;
+    int i = x[1] + y[2] + z[0];
+    cout << "A = " << (char) i << endl;
     return 0;
 }
