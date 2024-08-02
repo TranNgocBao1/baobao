@@ -1,0 +1,9 @@
+# Loại trừ file .exe
+*.exe
+
+# Các dòng loại trừ khác (nếu có)
+# Ví dụ:
+# Loại trừ thư mục build
+build/
+# Loại trừ file tạm thời
+*.tmp
