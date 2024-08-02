@@ -2,10 +2,10 @@
 using namespace std;
 
 int main() {
-   int x, y, z;
-   x=y=z =100;
-   int A;
-   A= x + y * z ;
+   string x, y, z;
+   x=y=z = "hello";
+   string A;
+   A = x[1] + y[2] + z[0];
    cout << "A = " << A << endl;
    return 0;
 }
