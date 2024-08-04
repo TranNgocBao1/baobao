@@ -26,15 +26,25 @@ int main()
 {
     srand(time(0));
     User Kien, Tam;
-    Kien = {"Tran Manh Kien"};
-    Tam = {"Nguyen Le Thi Tam Cam Tam"};
+    Kien = {"Kien"};
+    Tam = {"Tam"};
 
     User listUsers[] = {Kien, Tam};
 
     while(true){
         bool round = rand() % 2;
-        cout << listUsers[round].name <<" do you love " << listUsers[!round].name << "?" << endl;
-        sleep(2);
+        char answer;
+        cout << listUsers[round].name <<" do you love " << listUsers[!round].name << "? (y/n)" << endl;
+        cin.get(answer);
+        cin.ignore(256, '\n');
+        
+        if(static_cast<char>(tolower(answer)) == 'y'){
+            listUsers[!round].love_score += 5;
+            cout << "YES" << endl;
+        } else {
+            listUsers[!round].love_score -= 5;
+            cout << "NO" << endl;
+        }
     }
 
     return 0;
