@@ -13,7 +13,7 @@ int main()
 
     cout << "A = " <<  i << endl;
 
-    const int number = 60;
+    const int number = 60;git 
     cout<< "N ="<< number<<endl;
     return 0;
  }
