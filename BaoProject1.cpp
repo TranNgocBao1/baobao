@@ -16,9 +16,11 @@ int main()
     cout <<" x la so khong chia het cho 2<"<<endl;}
     int z =(x<y)?x:y;
     cout <<"Gia tri nho hon la: "<<z<<endl;
-    for( int i=1; i <= 100, i++) 
+    int i = 1;
+    while(i<=10)
     {
       cout <<i<<endl;
+      i ++;
     }
     return 0;
  }
